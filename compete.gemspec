@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{compete}
-  s.version = "0.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["simplificator"]
@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
     "LICENSE",
     "README.rdoc",
     "Rakefile",
+    "VERSION.yml",
     "lib/compete.rb",
     "test/compete_test.rb",
     "test/test_helper.rb"
