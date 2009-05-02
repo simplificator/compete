@@ -1,3 +1,4 @@
+require 'httparty'
 class Compete
   include HTTParty
   format :xml
@@ -14,7 +15,7 @@ class Compete
   attr_reader(:domain, :xml)
   
   # 
-  # Creates a new Compete Object from XML response of the compete API.
+  # Creates a new Compete Object from the XML response of the compete API (as parsed by httparty).
   # Details see http://developer.compete.com/
   #  
   def initialize(xml)
