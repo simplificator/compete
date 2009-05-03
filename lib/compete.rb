@@ -21,18 +21,23 @@ class Compete
   def initialize(xml)
     @xml = xml
     @domain =  @xml['ci']['dmn']['nm']
+
+    # metrics
+    @metrics_ranking = to_integer(@xml['ci']['dmn']['metrics']['val']['uv']['ranking'])
+    if data_available?
+      @metrics_date_range = build_metrics_date_range()
+    end
     
+    # metrics
+    @metrics_count = to_integer(@xml['ci']['dmn']['metrics']['val']['uv']['count'])
+    @metrics_link = @xml['ci']['dmn']['metrics']['link']
+    @metrics_icon = @xml['ci']['dmn']['metrics']['icon']
+
     # trust
     @trust_level_value = @xml['ci']['dmn']['trust']['val']
     @trust_level_link = @xml['ci']['dmn']['trust']['link']
     @trust_level_icon = @xml['ci']['dmn']['trust']['icon']
-    
-    # metrics
-    @metrics_link = @xml['ci']['dmn']['metrics']['link']
-    @metrics_icon = @xml['ci']['dmn']['metrics']['icon']
-    @metrics_ranking = to_integer(@xml['ci']['dmn']['metrics']['val']['uv']['ranking'])
-    @metrics_count = to_integer(@xml['ci']['dmn']['metrics']['val']['uv']['count'])
-    @metrics_date_range = build_metrics_date_range()
+
   end
   
   # Lookup the compete info for a domain.
@@ -43,6 +48,12 @@ class Compete
     raise "Unknown size '#{size}'" unless VALID_SIZES.include?(size)
     info = get(API_URL, :query => {:d => domain, :ver => API_VERSION, :apikey => COMPETE_API_KEY, :size => size})
     Compete.new(info)
+  end
+  
+  # Is data available for this domain?
+  # If this method returns true
+  def data_available?
+    !!self.metrics_ranking
   end
   
   private
@@ -66,5 +77,4 @@ class Compete
   def strip(value)
     value.gsub(/\s/, '') if value
   end
-  
 end

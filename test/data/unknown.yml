@@ -1,0 +1,29 @@
+--- 
+ci: 
+  dmn: 
+    trust: 
+      val: yellow
+      icon: http://home.compete.com.edgesuite.net/site_media/images/icons/trust_yellow_16.gif
+      caption: Trust
+      link: http://toolbar.compete.com/trustyellow/unknowndomain.something.notknow
+    rank: 
+      val: 
+      icon: http://home.compete.com.edgesuite.net/site_media/images/icons/profile_0_16.gif
+      caption: Profile
+      link: 
+    metrics: 
+      val: 
+        mth: 
+        uv: 
+          ranking: 
+          count: 
+        yr: 
+      icon: http://home.compete.com.edgesuite.net/site_media/images/icons/profile_0_16.gif
+      caption: Profile
+      link: 
+    deals: 
+      val: "0"
+      icon: http://home.compete.com.edgesuite.net/site_media/images/icons/deals_off_16.gif
+      caption: Deals
+      link: 
+    nm: unknowndomain.something.notknow

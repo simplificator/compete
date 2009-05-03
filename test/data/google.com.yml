@@ -1,0 +1,29 @@
+--- 
+ci: 
+  dmn: 
+    trust: 
+      val: green
+      icon: http://home.compete.com.edgesuite.net/site_media/images/icons/trust_green_16.gif
+      caption: Trust
+      link: http://toolbar.compete.com/trustgreen/google.com
+    rank: 
+      val: "1"
+      icon: http://home.compete.com.edgesuite.net/site_media/images/icons/profile_3_16.gif
+      caption: Profile
+      link: http://toolbar.compete.com/siteprofile/google.com
+    metrics: 
+      val: 
+        mth: "\n                    03\n                "
+        uv: 
+          ranking: "\n                        1\n                    "
+          count: "\n                       137,630,925\n                    "
+        yr: "\n                    2009\n                "
+      icon: http://home.compete.com.edgesuite.net/site_media/images/icons/profile_3_16.gif
+      caption: Profile
+      link: http://toolbar.compete.com/siteprofile/google.com
+    deals: 
+      val: "0"
+      icon: http://home.compete.com.edgesuite.net/site_media/images/icons/deals_off_16.gif
+      caption: Deals
+      link: 
+    nm: google.com
