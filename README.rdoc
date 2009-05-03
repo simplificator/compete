@@ -25,7 +25,11 @@ require 'simplificator-compete'
 COMPETE_API_KEY = 'your api key'
 
 info = Compete.for_domain('simplificator.com')
-puts "Ranking is: #{info.metrics_ranking}"
+if info.data_available?
+  puts "Ranking is: #{info.metrics_ranking}"
+else 
+  puts "no data"
+end
 
 ----
 
