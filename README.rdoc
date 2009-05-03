@@ -20,17 +20,16 @@ Look at compete.rb to see available information (i.e. metrics_ranking, metrics_l
 
 
 ----
-require 'rubygems'
-require 'simplificator-compete'
-COMPETE_API_KEY = 'your api key'
+  require 'rubygems'
+  require 'simplificator-compete'
+  COMPETE_API_KEY = 'your api key'
 
-info = Compete.for_domain('simplificator.com')
-if info.data_available?
-  puts "Ranking is: #{info.metrics_ranking}"
-else 
-  puts "no data"
-end
-
+  info = Compete.for_domain('simplificator.com')
+  if info.data_available?
+    puts "Ranking is: #{info.metrics_ranking}"
+  else 
+    puts "no data"
+  end
 ----
 
 
