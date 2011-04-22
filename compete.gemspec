@@ -23,7 +23,6 @@ Gem::Specification.new do |s|
     "test/data/unknown.yml",
     "test/test_helper.rb"
   ]
-  s.has_rdoc = true
   s.homepage = %q{http://github.com/simplificator/compete}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]

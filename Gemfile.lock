@@ -1,0 +1,18 @@
+PATH
+  remote: .
+  specs:
+    compete (0.2.0)
+      httparty (>= 0.4.3)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    crack (0.1.8)
+    httparty (0.7.7)
+      crack (= 0.1.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  compete!
