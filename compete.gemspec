@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{compete}
-  s.version = "0.2.0"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["simplificator"]
-  s.date = %q{2009-05-03}
+  s.date = %q{2011-04-25}
   s.email = %q{info@simplificator.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -16,7 +16,6 @@ Gem::Specification.new do |s|
     "LICENSE",
     "README.rdoc",
     "Rakefile",
-    "VERSION.yml",
     "lib/compete.rb",
     "test/compete_test.rb",
     "test/data/google.com.yml",
